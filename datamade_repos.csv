@@ -1,0 +1,6 @@
+name,html_url,stargazers_count,forks,description,homepage,language,created_at,updated_at
+vacant-building-finder,https://github.com/datamade/vacant-building-finder,23,19,"Searchable map of Chicago vacant and abandoned buildings, built using open 311 data.",https://chicagobuildings.org,JavaScript,2011-09-27T17:02:09Z,2020-04-28T02:45:07Z
+look-at-cook,https://github.com/datamade/look-at-cook,36,37,Explore Cook County's budget from 1993 to 2017 and learn how the money is being spent.,http://lookatcook.org,JavaScript,2011-10-15T18:36:54Z,2020-12-08T04:26:53Z
+clearstreets-processing,https://github.com/datamade/clearstreets-processing,6,2,Converts GPX files to OSM (Open Street Map) and snaps lines to city street grid,clearstreets.org,Python,2012-02-01T23:34:07Z,2019-06-06T11:14:00Z
+census,https://github.com/datamade/census,513,115,A Python wrapper for the US Census API. ,,Python,2012-06-07T21:44:36Z,2022-06-17T17:58:19Z
+food-inspections,https://github.com/datamade/food-inspections,1,1,Analysis of durations between food inspections,,Python,2012-06-13T00:03:52Z,2016-09-06T19:09:16Z

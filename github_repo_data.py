@@ -23,7 +23,7 @@ def get_repo_list():
     for page in range(1,(pages_to_fetch + 1)):
         print("Page %s" % page)
         repos = requests.get(api_url + "&page=" + str(page))
-        if repos.status_code is 200:
+        if repos.status_code == 200:
             for r in repos.json():
                 repos_list.append([r[key] for key in fields])
 
