@@ -1,6 +1,9 @@
 import csv
 import requests
 
+
+#my_token = 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
+
 def get_repo_list():
 
     # change these things for your org
@@ -8,6 +11,8 @@ def get_repo_list():
     pages_to_fetch = 2 # number of repos you have, divided by 100. kinda hack-y!
 
     api_url = 'https://developer.github.com/v3/repos/#list-all-repositories' .format(org_name)
+    api_url = 'https://docs.github.com/en/rest/search#search-repositories' .format(org_name)
+    
     
     repos_list = []
 
