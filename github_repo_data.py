@@ -4,10 +4,11 @@ import requests
 def get_repo_list():
 
     # change these things for your org
-    org_name = 'datamade'
+    org_name = 'v3'
     pages_to_fetch = 2 # number of repos you have, divided by 100. kinda hack-y!
 
-    api_url = 'https://api.github.com/orgs/%s/repos?per_page=100' % org_name
+    api_url = 'https://developer.github.com/v3/repos/#list-all-repositories' .format(org_name)
+    
     repos_list = []
 
     fields = ['name',
@@ -29,13 +30,13 @@ def get_repo_list():
 
     print("Repo list created. Length: %s" % len(repos_list))
 
-    outp = open(('%s_repos.csv' % org_name), 'w')
+    outp = open(('%s_repos.csv' .format(org_name)), 'w')
     writer = csv.writer(outp)
     writer.writerow(fields) # header
     writer.writerows(repos_list) # data
     outp.close()
 
-    print("File written: %s" % ('%s_repos.csv' % org_name))
+    print("File written: %s" % ('%s_repos.csv' .format(org_name)))
     print("done")
 
 if __name__ == "__main__":

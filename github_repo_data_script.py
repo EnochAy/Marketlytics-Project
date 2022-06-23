@@ -1,6 +1,6 @@
 import pygithub3
 
-gh = None
+gh = 'v3'
 
 
 def gather_clone_urls(organization, no_forks=True):
